@@ -14,7 +14,7 @@ public class Main {
 		s.agregarSala(sal2);
 		
 		
-		//c.conectarseServidor("192.168.1.33", 14000);
+		//c.conectarseServidor("192.168.1.35", 14000);
 
 		HiloServidor hilo = new HiloServidor(s);
 	///	HiloCliente hiloC = new HiloCliente(c);

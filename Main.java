@@ -4,7 +4,7 @@ public class Main {
 			
 		
 		Servidor s = new Servidor(14000);
-		//Cliente c= new Cliente("Maxi");
+		Cliente c= new Cliente("Maxi");
 
 		///SALAS DEFAULT
 		Sala sal1 = new Sala("SALA ACES HIGH 1",s);
@@ -14,12 +14,12 @@ public class Main {
 		s.agregarSala(sal2);
 		
 		
-		//c.conectarseServidor("192.168.1.35", 14000);
+		c.conectarseServidor("195.168.1.35", 14000);
 
 		HiloServidor hilo = new HiloServidor(s);
-	///	HiloCliente hiloC = new HiloCliente(c);
+		HiloCliente hiloC = new HiloCliente(c);
 		
-		//hiloC.start();
+		hiloC.start();
 
 			
 		hilo.start();
